@@ -1,9 +1,26 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.6.RELEASE")
+    }
+}
+
+group 'com.wildvash.hh'
+version '1.0-SNAPSHOT'
+
 apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
-depencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
+dependencies {
+    compile('org.springframework.boot:spring-boot-gradle-plugin:2.0.6.RELEASE')
 }
+
