@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+depencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+}
