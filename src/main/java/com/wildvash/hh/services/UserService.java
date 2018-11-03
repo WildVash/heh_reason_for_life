@@ -13,11 +13,11 @@ public class UserService {
     private final UserRepository userRepository;
 
     public UserDto createUser(UserDto userDto) {
-        User savedUser = userRepository.save(
-                User.builder()
-                        .id(2)
-                        .firstName("Masha")
-                        .lastName("Petrova").build());
+        User user = User.builder()
+                .firstName(userDto.getFirstName())
+                .lastName(userDto.getLastName())
+                .build();
+        User savedUser = userRepository.save(user);
         return UserDto.builder()
                 .id(savedUser.getId())
                 .firstName(savedUser.getFirstName())

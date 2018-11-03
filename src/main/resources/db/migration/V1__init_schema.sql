@@ -1,5 +1,5 @@
 CREATE TABLE users (
-id BIGINT AUTO_INCREMENT PRIMARY KEY,
+id SERIAL PRIMARY KEY,
 first_name text,
 last_name text
 );

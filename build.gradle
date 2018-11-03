@@ -28,6 +28,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
     compile("org.postgresql:postgresql:42.2.5")
     compile("org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}")
-    compileOnly("org.projectlombok:lombok:1.16.16")
+    compile('org.flywaydb:flyway-gradle-plugin:5.2.1')
+    compileOnly("org.projectlombok:lombok:1.18.4")
 }
 
